@@ -17,11 +17,12 @@ class Send extends AbstractApi implements SendInterface
     use ValidatorTrait;
 
     /**
+     * @param string|array $recipient
      * @param mixed $message
      *
      * @throws \Exception
      */
-    public function message(string $recipient, $message, array $options = []): SendResponse
+    public function message($recipient, $message, array $options = []): SendResponse
     {
         $this->isValidOptions($options, $message);
         $message = $this->isValidMessage($message);

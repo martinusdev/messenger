@@ -51,11 +51,12 @@ class SendRequest extends AbstractRequest
      * Request constructor.
      *
      * @param string|\Kerox\Messenger\Model\Message $content
+     * @param string|array $recipient
      */
     public function __construct(
         string $pageToken,
         $content,
-        ?string $recipient = null,
+        $recipient = null,
         array $options = [],
         string $requestType = self::REQUEST_TYPE_MESSAGE
     ) {
