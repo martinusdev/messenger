@@ -18,7 +18,7 @@ class Send extends AbstractApi implements SendInterface
 
     /**
      * @param string|array $recipient
-     * @param mixed $message
+     * @param mixed        $message
      *
      * @throws \Exception
      */
